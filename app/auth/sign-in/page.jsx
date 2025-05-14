@@ -70,23 +70,23 @@ export default function SignInPage () {
   // Solo mostrar el loader cuando estamos en el estado inicial de carga
   if (loading) {
     return (
-      <div className='min-h-screen bg-gray-900 flex items-center justify-center'>
-        <Loader2 className='w-8 h-8 animate-spin text-primary' />
+      <div className='min-h-screen bg-principal-200 flex items-center justify-center'>
+        <Loader2 className='w-8 h-8 animate-spin text-accent' />
       </div>
     )
   }
 
   return (
     <div
-      className='min-h-screen bg-gradient-to-br from-gray-900 to-black flex items-center justify-center p-4'
+      className='min-h-screen bg-gradient-to-br from-principal-300 to-principal-200 flex items-center justify-center p-4'
       role='main'
       aria-labelledby='signin-title'
     >
       <div className='w-full max-w-md'>
-        <div className='bg-gray-800/50 backdrop-blur-xl rounded-2xl shadow-2xl p-8 border border-gray-700'>
+        <div className='bg-principal-200 backdrop-blur-xl rounded-2xl shadow-md p-8 border border-secondary'>
           <h1
             id='signin-title'
-            className='text-3xl font-bold text-white mb-8 text-center'
+            className='text-3xl font-bold text-secondary mb-8 text-center border-b border-secondary pb-2'
           >
             Iniciar Sesión
           </h1>
@@ -101,7 +101,7 @@ export default function SignInPage () {
               <label
                 id='email-label'
                 htmlFor='email'
-                className='block text-sm font-medium text-white mb-1.5'
+                className='block text-sm font-medium text-secondary mb-1.5'
               >
                 Correo Electrónico
               </label>
@@ -116,9 +116,9 @@ export default function SignInPage () {
                     autoComplete='email'
                     aria-invalid={!!errors.email}
                     aria-describedby={errors.email ? 'email-error' : undefined}
-                    className='mt-1 block w-full rounded-xl pl-3 py-2 bg-gray-700/50 border-gray-600 text-white shadow-sm 
-                      focus:border-primary focus:ring-primary focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900
-                      placeholder:text-gray-400 transition-all duration-200'
+                    className='mt-1 block w-full rounded-xl border-2 pl-3 py-2 bg-principal-300/40 border-secondary text-secondary shadow-sm 
+                      focus:border-accent focus:ring-accent focus:ring-2 focus:ring-offset-1 focus:ring-offset-principal-200
+                      placeholder:text-secondary-600 transition-all duration-200'
                     placeholder='tu@email.com'
                   />
                 )}
@@ -126,7 +126,7 @@ export default function SignInPage () {
               {errors.email && (
                 <p
                   id='email-error'
-                  className='mt-2 text-sm text-red-400'
+                  className='mt-2 text-sm text-accent'
                   role='alert'
                 >
                   {errors.email.message}
@@ -138,7 +138,7 @@ export default function SignInPage () {
               <label
                 id='password-label'
                 htmlFor='password'
-                className='block text-sm font-medium text-white mb-1.5'
+                className='block text-sm font-medium text-secondary mb-1.5'
               >
                 Contraseña
               </label>
@@ -155,9 +155,9 @@ export default function SignInPage () {
                     aria-describedby={
                       errors.password ? 'password-error' : undefined
                     }
-                    className='mt-1 block w-full rounded-xl pl-3 py-2 bg-gray-700/50 border-gray-600 text-white shadow-sm 
-                      focus:border-primary focus:ring-primary focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900
-                      placeholder:text-gray-400 transition-all duration-200'
+                    className='mt-1 block w-full rounded-xl pl-3 py-2 border-2 bg-principal-300/40 border-secondary text-secondary shadow-sm 
+                      focus:border-accent focus:ring-accent focus:ring-2 focus:ring-offset-1 focus:ring-offset-principal-200
+                      placeholder:text-secondary-600 transition-all duration-200'
                     placeholder='••••••••'
                   />
                 )}
@@ -165,7 +165,7 @@ export default function SignInPage () {
               {errors.password && (
                 <p
                   id='password-error'
-                  className='mt-2 text-sm text-red-400'
+                  className='mt-2 text-sm text-accent'
                   role='alert'
                 >
                   {errors.password.message}
@@ -178,9 +178,9 @@ export default function SignInPage () {
               disabled={isSubmitting}
               aria-busy={isSubmitting}
               className='w-full flex justify-center py-3 px-4 border border-transparent rounded-xl text-sm font-semibold
-                text-white bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 
-                focus:ring-primary focus:ring-offset-gray-900 disabled:opacity-50 disabled:cursor-not-allowed
-                transition-all duration-200 shadow-lg shadow-primary/25'
+                text-white bg-accent hover:bg-accent/90 focus:outline-none focus:ring-2 focus:ring-offset-2 
+                focus:ring-accent focus:ring-offset-principal-200 disabled:opacity-50 disabled:cursor-not-allowed
+                transition-all duration-200 shadow-md'
             >
               {isSubmitting ? (
                 <>
