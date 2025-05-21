@@ -79,7 +79,7 @@ export function PaymentMethodForm () {
         </FormField>
 
         <FormField
-          label='Cédula de Identidad'
+          label='Pasaporte o PPT'
           error={errors.identificationNumber}
           optional={false}
         >

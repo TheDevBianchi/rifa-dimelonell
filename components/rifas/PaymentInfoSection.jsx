@@ -154,7 +154,7 @@ const PaymentInfoSection = ({
               )}
               {selectedPaymentMethod.identificationNumber && (
                 <div className='flex flex-col md:flex-row justify-between items-center p-1.5 rounded bg-principal-100 border border-principal-400/20'>
-                  <span className='text-secondary-700'>Cédula:</span>
+                  <span className='text-secondary-700'>Pasaporte o PPT:</span>
                   <CopyButton text={selectedPaymentMethod.identificationNumber} label={selectedPaymentMethod.identificationNumber} />
                 </div>
               )}

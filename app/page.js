@@ -5,20 +5,16 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { FaCreditCard } from 'react-icons/fa'
 
-// Función para formatear precios en COP
 const formatCOP = (price) => {
   return `COP ${price.toLocaleString('es-CO')}`;
 }
 
 const HomePage = () => {
-  // No pasos needed anymore
-
   return (
     <div className='min-h-screen bg-principal-200'>
       <div className='relative'>
         <div className=''></div>
         <Header />
-        
         {/* Sección de Rifas Disponibles */}
         <main className='container mx-auto px-4'>
           {/* La sección "Cómo Participar" ha sido eliminada */}

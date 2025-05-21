@@ -40,29 +40,15 @@ export default function Header() {
       </header>
       
       {/* Banner hero por debajo de la navbar */}
-      <div className='bg-footer-gradient shadow-lg mb-8 h-[200px] md:h-[250px] lg:h-[500px]'>
+      <div className='shadow-lg mb-8 h-[200px] md:h-[300px] lg:h-[800px] w-full overflow-hidden'>
         <div className='relative w-full h-full'>
           <Image
-            src='/Banner.webp'
+            src='/banner nelson.webp'
             alt='Banner rifa con jirvin'
             fill
-            className='object-cover'
+            className='object-contain md:object-fit w-full h-full'
             priority
           />
-          <div className="absolute inset-0 bg-secondary-900/40 flex flex-col items-center justify-center px-4 text-center">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 tracking-wide">
-              Gana Increíbles Premios
-            </h1>
-            <p className="text-lg md:text-xl text-white max-w-2xl mb-6">
-              Participa en nuestras rifas y cumple tus sueños con premios exclusivos
-            </p>
-            <Link 
-              href="/rifa/1"
-              className="px-6 py-3 bg-accent text-white font-semibold rounded-md hover:bg-accent-600 transition-all duration-800 hover:scale-105 shadow-lg animate-pulse"
-            >
-              ¡Compra Tu Boleto Ahora!
-            </Link>
-          </div>
         </div>
       </div>
     </>
