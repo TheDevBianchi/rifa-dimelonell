@@ -7,7 +7,7 @@ function footer () {
       <div className='bg-principal-200 flex flex-col items-center justify-center w-full py-8'>
         <div className='max-w-[200px] mb-4'>
           <Image
-            src='/logo-transparente.webp'
+            src='/logo.webp'
             alt='Logo rifa con jirvin'
             width={2835}
             height={2835}
