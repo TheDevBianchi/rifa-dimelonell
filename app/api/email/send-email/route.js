@@ -9,7 +9,7 @@ export async function POST(request) {
     const { email, name, amount, date, paymentMethod, raffleName, ticketsCount, confirmationNumber, number } = body;
 
     const { data, error } = await resend.emails.send({
-      from: "Rifa Con Jirvin <tickets@rifaconjirvin.com>",
+      from: "Rifa Con Dimelonell <tickets@rifaconDimelonell.com>",
       to: [email],
       subject: `Confirmación de Compra - ${raffleName}`,
       html: `
@@ -40,8 +40,8 @@ export async function POST(request) {
         <p style="margin-top: 30px; font-size: 14px; color: #666666; text-align: center;">No olvides estar atento a los resultados. ¡Buena suerte!</p>
     </div>
     <div style="background-color: #f9f9f9; padding: 20px; text-align: center; color: #666666; font-size: 14px; border-top: 1px solid #eeeeee; border-radius: 0 0 10px 10px;">
-        <p style="margin: 0;">Saludos cordiales,<br><strong>El equipo de Rifa Con Jirvin</strong></p>
-        <p style="margin: 10px 0 0; font-size: 13px;">📧 rifaconjirvin@gmail.com | ☎️ 0424-8719024 </p>
+        <p style="margin: 0;">Saludos cordiales,<br><strong>El equipo de Rifa Con Dimelonell</strong></p>
+        <p style="margin: 10px 0 0; font-size: 13px;">📧 rifaconDimelonell@gmail.com | ☎️ 0424-8719024 </p>
         <p style="margin: 10px 0 0; font-size: 12px; color: #999;">Si tienes alguna pregunta, no dudes en contactarnos.</p>
     </div>
 </div>

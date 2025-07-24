@@ -22,7 +22,7 @@ export default function Header() {
           {/* Botones de acción en la parte derecha */}
           <div className="flex gap-3">
             <Link 
-              href="https://wa.me/+573123456789" 
+              href="https://wa.me/573014578611" 
               target="_blank"
               className="flex items-center gap-2 px-4 py-2 border-2 border-accent text-accent hover:bg-accent hover:text-principal-50 rounded-md transition-all duration-300 hover:scale-105"
             >
@@ -44,7 +44,7 @@ export default function Header() {
         <div className='relative w-full h-full'>
           <Image
             src='/banner nelson.webp'
-            alt='Banner rifa con jirvin'
+            alt='Banner rifa con Dimelonell'
             fill
             className='object-contain md:object-fit w-full h-full'
             priority

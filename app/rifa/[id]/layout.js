@@ -25,8 +25,8 @@ export async function generateMetadata ({ params }) {
 
   return {
     title: raffle
-      ? `${raffle.title} | rifa con jirvin`
-      : 'Rifa no encontrada | rifa con jirvin',
+      ? `${raffle.title} | rifa con Dimelonell`
+      : 'Rifa no encontrada | rifa con Dimelonell',
     description: raffle
       ? raffle.description
       : 'Lo sentimos, esta rifa no está disponible.',

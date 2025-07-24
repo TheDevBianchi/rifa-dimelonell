@@ -8,7 +8,7 @@ function footer () {
         <div className='max-w-[200px] mb-4'>
           <Image
             src='/logo.webp'
-            alt='Logo rifa con jirvin'
+            alt='Logo rifa con Dimelonell'
             width={2835}
             height={2835}
             className='w-full h-auto'

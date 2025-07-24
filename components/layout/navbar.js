@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <div className="flex h-16 items-center justify-between border-b border-principal-400/30 px-6 bg-principal-100">
       <div className="flex items-center gap-x-4">
-        <h1 className="text-xl font-medium text-secondary">Bienvenido, Jirvin</h1>
+        <h1 className="text-xl font-medium text-secondary">Bienvenido, Nell</h1>
       </div>
       <div className="flex items-center gap-x-4">
         <Button variant="ghost" size="icon" className="text-secondary-600 hover:text-accent hover:bg-principal-200">
