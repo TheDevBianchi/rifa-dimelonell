@@ -26,7 +26,7 @@ const SuccessModal = ({ isOpen, onClose, purchaseData, raffle }) => {
     `
   )
 
-  const whatsappUrl = `https://wa.me/584248719024?text=${whatsappMessage}`
+  const whatsappUrl = `https://wa.me/573014578611?text=${whatsappMessage}`
 
   return (
     <AnimatePresence>

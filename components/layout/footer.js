@@ -18,7 +18,7 @@ function footer () {
         <h2 className='text-lg font-medium text-secondary mb-4'>REDES SOCIALES</h2>
         <div className='flex items-center justify-center gap-6'>
           <Link
-            href='https://www.facebook.com/profile.php?id=61574174905201'
+            href='https://www.facebook.com/share/12GZGFxxqSr/?mibextid=wwXIfr'
             className='text-secondary hover:text-accent transition-colors'
             target='_blank'
             rel='noopener noreferrer'
@@ -26,7 +26,7 @@ function footer () {
             <Image src='/facebook.svg' alt='Facebook' width={32} height={32} />
           </Link>
           <Link
-            href='https://www.instagram.com/jirvin.flores'
+            href='https://www.instagram.com/dimelonell'
             className='text-secondary hover:text-accent transition-colors'
             target='_blank'
             rel='noopener noreferrer'
@@ -39,7 +39,7 @@ function footer () {
             />
           </Link>
           <Link
-            href='https://wa.me/584248719024'
+            href='https://wa.me/573014578611'
             className='text-secondary hover:text-accent transition-colors'
             target='_blank'
             rel='noopener noreferrer'
@@ -47,7 +47,7 @@ function footer () {
             <Image src='/whatsapp.svg' alt='WhatsApp' width={32} height={32} />
           </Link>
           <Link
-            href='https://www.tiktok.com/@jirvinflores'
+            href='https://www.tiktok.com/@dimelonell'
             className='text-secondary hover:text-accent transition-colors'
             target='_blank'
             rel='noopener noreferrer'
