@@ -129,7 +129,7 @@ export default function TicketVerificationModal({ isOpen, onClose, raffleId }) {
                                                     {item.raffleName || `Rifa ${item.raffleId}`}
                                                 </h4>
                                                 <span className="text-accent font-medium text-sm">
-                                                    {(item.totalAmount * 4000).toLocaleString('es-CO')} COP
+                                                    {(item.totalAmount ).toLocaleString('es-CO')} COP
                                                 </span>
                                             </div>
                                             <div className="flex flex-wrap gap-1.5">

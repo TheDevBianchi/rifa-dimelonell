@@ -66,7 +66,7 @@ function RaffleList ({ raffles }) {
                 <div className='flex items-center justify-between'>
                   <span className='text-secondary-600'>Precio:</span>
                   <span className='text-accent font-medium'>
-                    {(raffle.price * 4000).toLocaleString('es-CO')} COP
+                    {(raffle.price ).toLocaleString('es-CO')} COP
                   </span>
                 </div>
 

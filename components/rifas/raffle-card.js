@@ -115,7 +115,7 @@ export function RaffleCard ({ raffle }) {
         <div className='flex justify-between items-center'>
           <span className='text-secondary-600 text-sm'>Precio:</span>
           <span className='text-accent font-medium'>
-            {(raffle.price * 4000).toLocaleString('es-CO')} COP
+            {(raffle.price ).toLocaleString('es-CO')} COP
           </span>
         </div>
         
