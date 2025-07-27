@@ -41,7 +41,7 @@ export function PurchaseCard ({ purchase, loadingStates, onApprove, onReject }) 
         <PurchaseInfo
           label='Total'
           value={`${(
-            purchase.selectedTickets.length * purchase.rafflePrice * 4000
+                            purchase.selectedTickets.length * purchase.rafflePrice
           ).toLocaleString('es-CO')} COP`}
         />
       </div>

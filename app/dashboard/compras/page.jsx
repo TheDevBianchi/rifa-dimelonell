@@ -1,11 +1,7 @@
 'use client'
 
 import { useState, useEffect, useCallback } from 'react'
-import { usePurchaseStore } from '@/store/purchaseStore'
 import { PurchaseTable } from '@/components/purchases/PurchaseTable'
-import { CreatePurchaseModal } from '@/components/purchases/CreatePurchaseModal'
-import { Button } from '@/components/ui/button'
-import { Plus } from 'lucide-react'
 import { getPurchases, getRaffles } from './actions'
 import {
   Select,
@@ -16,20 +12,17 @@ import {
 } from "@/components/ui/select"
 
 const PurchasesPage = () => {
-  const { isPurchaseModalOpen, setPurchaseModalOpen } = usePurchaseStore()
   const [purchases, setPurchases] = useState([])
   const [raffles, setRaffles] = useState([])
   const [selectedRaffle, setSelectedRaffle] = useState('')
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState(null)
 
-  // Obtener la lista de rifas
   const fetchRaffles = useCallback(async () => {
     try {
       const result = await getRaffles()
       if (result.success) {
         setRaffles(result.raffles)
-        // Seleccionar la primera rifa por defecto si existe
         if (result.raffles.length > 0) {
           setSelectedRaffle(result.raffles[0].id)
         }
@@ -83,10 +76,6 @@ const PurchasesPage = () => {
     <div className="container mx-auto py-6 bg-principal-200">
       <div className="flex justify-between items-center mb-6 border-b border-secondary pb-2">
         <h1 className="text-2xl font-bold text-secondary">Gestión de Compras</h1>
-        <Button onClick={() => setPurchaseModalOpen(true)} className="bg-accent text-white hover:bg-accent/90">
-          <Plus className="mr-2 h-4 w-4" />
-          Nueva Compra
-        </Button>
       </div>
 
       <div className="mb-6">

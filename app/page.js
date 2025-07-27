@@ -42,7 +42,7 @@ const HomePage = () => {
                 Participa ahora en nuestras rifas y podrías ser el próximo ganador de premios increíbles.
               </p>
               <Link
-                href="/rifa/1"
+                href="/rifa/egWgRa2rxeimfSOClz1e"
                 className="inline-block px-6 py-3 bg-accent text-white font-medium rounded hover:bg-accent/90 transition-all duration-300 shadow-sm text-base"
               >
                 Comprar boleto

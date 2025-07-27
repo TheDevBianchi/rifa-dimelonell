@@ -87,7 +87,7 @@ const PersonalInfoSection = ({ control, errors }) => (
               id='phone'
               type='tel'
               className='bg-principal-100 border-principal-400/30 focus:border-accent/50 transition-colors'
-              placeholder='+58 424 1234567'
+              placeholder='+57 424 1234567'
             />
           )}
         />

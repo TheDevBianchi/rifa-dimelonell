@@ -168,7 +168,7 @@ export default function EditRaffleForm ({ raffle }) {
             {/* Configuración de Tickets */}
             <FormSection title='Configuración de Tickets' icon={Hash}>
               <div className='grid grid-cols-2 gap-4'>
-                <InputField label='Precio (USD)' error={errors.price}>
+                <InputField label='Precio (COP)' error={errors.price}>
                   <div className='relative'>
                     <DollarSign className='absolute left-3 top-1/2 -translate-y-1/2 text-secondary-600 w-4 h-4' />
                     <Controller

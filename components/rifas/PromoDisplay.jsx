@@ -60,9 +60,9 @@ export function PromoDisplay({ raffleId, ticketPrice }) {
             {promo.discountType === 'lower_cost' && (
               <div className="flex flex-wrap items-center text-accent">
                 <ArrowDownCircle className="h-3 w-3 mr-1" />
-                <span>Precio especial: {(promo.newTicketPrice * 4000).toLocaleString('es-CO')} COP por ticket</span>
+                <span>Precio especial: {(promo.newTicketPrice).toLocaleString('es-CO')} COP por ticket</span>
                 <Badge className="ml-1 mt-0.5 bg-principal-300 text-secondary text-[10px]">
-                  Ahorra {((ticketPrice - promo.newTicketPrice) * 4000).toLocaleString('es-CO')} COP
+                                      Ahorra {((ticketPrice - promo.newTicketPrice)).toLocaleString('es-CO')} COP
                 </Badge>
               </div>
             )}
@@ -70,10 +70,10 @@ export function PromoDisplay({ raffleId, ticketPrice }) {
             {promo.discountType === 'package' && (
               <div className="flex flex-wrap items-center text-accent">
                 <Package className="h-3 w-3 mr-1" />
-                <span>{promo.minTickets} tickets por {(promo.packagePrice * 4000).toLocaleString('es-CO')} COP</span>
+                <span>{promo.minTickets} tickets por {(promo.packagePrice).toLocaleString('es-CO')} COP</span>
                 {ticketPrice && (
                   <Badge className="ml-1 mt-0.5 bg-principal-300 text-secondary text-[10px]">
-                    Ahorra {(((ticketPrice * promo.minTickets) - promo.packagePrice) * 4000).toLocaleString('es-CO')} COP
+                                          Ahorra {(((ticketPrice * promo.minTickets) - promo.packagePrice)).toLocaleString('es-CO')} COP
                   </Badge>
                 )}
               </div>

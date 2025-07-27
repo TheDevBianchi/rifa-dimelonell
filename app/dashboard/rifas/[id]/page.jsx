@@ -230,13 +230,13 @@ export default function RaffleDetailsPage() {
                     Precio por Ticket
                   </h3>
                   <p className="text-xl font-bold text-accent">
-                    ${raffle.price} USD
+                    ${raffle.price} COP
                   </p>
                 </div>
                 <div>
                   <h3 className="font-medium text-secondary-600">Total Recaudado</h3>
                   <p className="text-xl font-bold text-accent">
-                    ${(raffle.soldTickets?.length || 0) * raffle.price} USD
+                    ${(raffle.soldTickets?.length || 0) * raffle.price} COP
                   </p>
                 </div>
               </div>

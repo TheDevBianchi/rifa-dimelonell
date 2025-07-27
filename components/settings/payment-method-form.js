@@ -216,7 +216,7 @@ export function PaymentMethodForm () {
                 id='phone'
                 name='phone'
                 type='tel'
-                placeholder='+58 424 1234567'
+                placeholder='+57 424 1234567'
                 error={errors.phone}
                 className="bg-principal-300/40 border-secondary text-secondary placeholder:text-secondary-600 focus-visible:ring-accent"
               />

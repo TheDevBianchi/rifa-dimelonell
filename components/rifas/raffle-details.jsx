@@ -112,7 +112,7 @@ export function RaffleDetails({ raffle }) {
               <p className="flex justify-between items-center">
                 <span className="text-secondary-700">Precio por ticket:</span>
                 <span className="text-xl font-medium text-accent">
-                  {formatCOP(raffle.price * 4000)}
+                  {formatCOP(raffle.price)}
                 </span>
               </p>
               <p className="flex justify-between items-center">

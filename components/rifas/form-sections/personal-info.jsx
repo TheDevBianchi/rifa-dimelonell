@@ -86,7 +86,7 @@ export function PersonalInfoFields({ form }) {
               {...field}
               type='tel'
               className='bg-gray-800/50 border-gray-700'
-              placeholder='+58 424 1234567'
+              placeholder='+57 424 1234567'
               aria-label='Número de teléfono'
             />
           )}

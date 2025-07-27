@@ -18,7 +18,7 @@ function footer () {
         <h2 className='text-lg font-medium text-secondary mb-4'>REDES SOCIALES</h2>
         <div className='flex items-center justify-center gap-6'>
           <Link
-            href='https://www.facebook.com/share/12GZGFxxqSr/?mibextid=wwXIfr'
+            href='https://www.facebook.com/share/15g9fMFnco/?mibextid=wwXIfr'
             className='text-secondary hover:text-accent transition-colors'
             target='_blank'
             rel='noopener noreferrer'

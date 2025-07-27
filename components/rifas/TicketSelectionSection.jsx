@@ -132,19 +132,19 @@ const TicketSelectionSection = ({
                 <div className='flex flex-col items-end'>
                   <div className='flex items-center'>
                     <span className='text-xs text-secondary-600 line-through mr-2'>
-                      {(randomTicketCount * raffle.price * 4000).toLocaleString('es-CO')} COP
+                      {(randomTicketCount * raffle.price).toLocaleString('es-CO')} COP
                     </span>
                     <span className='text-xs bg-principal-400/30 text-accent px-2 py-0.5 rounded-full'>
                       {selectedPromotion.name}
                     </span>
                   </div>
                   <span className='text-base font-medium text-secondary'>
-                    {(calculateTotal(randomTicketCount) * 4000).toLocaleString('es-CO')} COP
+                    {(calculateTotal(randomTicketCount)).toLocaleString('es-CO')} COP
                   </span>
                 </div>
               ) : (
                 <span className='text-base font-medium text-secondary'>
-                  {(randomTicketCount * raffle.price * 4000).toLocaleString('es-CO')} COP
+                  {(randomTicketCount * raffle.price).toLocaleString('es-CO')} COP
                 </span>
               )}
             </div>
@@ -212,13 +212,13 @@ const TicketSelectionSection = ({
                       {promo.discountType === 'lower_cost' && (
                         <>
                           <ArrowDownCircle className='w-3 h-3 mr-1 text-accent' />
-                          <span>Precio reducido: {(promo.newTicketPrice * 4000).toLocaleString('es-CO')} COP por ticket</span>
+                          <span>Precio reducido: {(promo.newTicketPrice).toLocaleString('es-CO')} COP por ticket</span>
                         </>
                       )}
                       {promo.discountType === 'package' && (
                         <>
                           <Package className='w-3 h-3 mr-1 text-accent' />
-                          <span>{promo.minTickets} tickets por {(promo.packagePrice * 4000).toLocaleString('es-CO')} COP</span>
+                          <span>{promo.minTickets} tickets por {(promo.packagePrice).toLocaleString('es-CO')} COP</span>
                         </>
                       )}
                     </div>

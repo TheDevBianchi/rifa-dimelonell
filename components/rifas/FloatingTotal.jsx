@@ -46,16 +46,16 @@ const FloatingTotal = ({
           <div className='space-y-1'>
             {selectedPromotion && (
               <div className='flex items-center'>
-                <span className='text-xs text-secondary-600 line-through mr-2'>{(regularTotal * 4000).toLocaleString('es-CO')} COP</span>
+                <span className='text-xs text-secondary-600 line-through mr-2'>{(regularTotal).toLocaleString('es-CO')} COP</span>
                 <span className='text-xs bg-principal-400/30 text-accent px-2 py-0.5 rounded-full'>
-                  Ahorras {(savings * 4000).toLocaleString('es-CO')} COP
+                  Ahorras {(savings).toLocaleString('es-CO')} COP
                 </span>
               </div>
             )}
             <div className='flex items-center'>
               <span className='text-xs font-medium text-secondary-700 mr-2'>Total:</span>
               <span className='text-base font-medium text-secondary'>
-                {(discountedTotal * 4000).toLocaleString('es-CO')} COP
+                {(discountedTotal).toLocaleString('es-CO')} COP
               </span>
             </div>
           </div>

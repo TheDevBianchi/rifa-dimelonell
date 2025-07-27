@@ -18,7 +18,7 @@ export async function POST(request) {
             ? `<li>Tickets: ${purchaseData.selectedTickets.join(', ')}</li>`
             : `<li>Sus tickets serán enviados próximamente</li>`
           }
-          <li>Total: $${(purchaseData.selectedTickets.length * raffle.price).toFixed(2)} USD</li>
+          <li>Total: $${(purchaseData.selectedTickets.length * raffle.price).toFixed(2)} COP</li>
           <li>Método de pago: ${purchaseData.paymentMethod}</li>
           <li>Referencia: ${purchaseData.paymentReference}</li>
         </ul>

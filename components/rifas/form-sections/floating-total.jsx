@@ -22,11 +22,11 @@ export function FloatingTotal ({ raffle, randomTicketCount, isSubmitting }) {
           <div className='flex items-center gap-2'>
             <DollarSign className='w-5 h-5 text-green-400' />
             <span className='text-lg font-semibold text-green-400'>
-              ${total.toFixed(2)} USD
+              ${total.toFixed(2)} COP
             </span>
           </div>
           <span className='text-sm text-gray-400'>
-            ({ticketCount} tickets × ${raffle.price} USD)
+            ({ticketCount} tickets × ${raffle.price} COP)
           </span>
         </div>
 

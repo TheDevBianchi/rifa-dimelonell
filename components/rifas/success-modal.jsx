@@ -19,7 +19,7 @@ const SuccessModal = ({ isOpen, onClose, purchaseData, raffle }) => {
       purchaseData?.selectedTickets?.length
     } tickets para la rifa ${raffle?.title}:
     \n\nTotal pagado: ${(
-      purchaseData?.selectedTickets?.length * raffle?.price * 4000
+              purchaseData?.selectedTickets?.length * raffle?.price
     ).toLocaleString('es-CO')} COP
     \n\nMétodo de pago: ${paymentMethod?.name}
     \n\nReferencia: ${purchaseData.paymentReference}
@@ -100,7 +100,7 @@ const SuccessModal = ({ isOpen, onClose, purchaseData, raffle }) => {
                     )}
                     <li>
                       <span className="text-secondary">Total:</span> {(
-                        purchaseData.selectedTickets.length * raffle.price * 4000
+                        purchaseData.selectedTickets.length * raffle.price
                       ).toLocaleString('es-CO')}{' '}
                       COP
                     </li>
