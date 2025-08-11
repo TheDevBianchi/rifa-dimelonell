@@ -5,8 +5,6 @@ import { Input } from "../ui/input";
 
 export default function TicketVerificationModal({ isOpen, onClose, raffleId }) {
     const [formData, setFormData] = useState({
-        name: "",
-        email: "",
         phone: ""
     });
     const [verificationResult, setVerificationResult] = useState(null);
@@ -17,7 +15,7 @@ export default function TicketVerificationModal({ isOpen, onClose, raffleId }) {
         setIsLoading(true);
         
         try {
-            const result = await verifyTickets(raffleId, formData);
+            const result = await verifyTickets(raffleId, formData.phone);
             setVerificationResult(result);
         } catch (error) {
             setVerificationResult({
@@ -49,34 +47,6 @@ export default function TicketVerificationModal({ isOpen, onClose, raffleId }) {
                     </h2>
                 
                 <form onSubmit={handleSubmit} className="space-y-3">
-                    <div>
-                        <label className="block text-sm font-medium text-secondary-700 mb-1">
-                            Nombre
-                        </label>
-                        <Input
-                            type="text"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleInputChange}
-                            required
-                            className="bg-principal-200 border-principal-400/30 text-secondary focus:border-accent/50 transition-colors"
-                        />
-                    </div>
-                    
-                    <div>
-                        <label className="block text-sm font-medium text-secondary-700 mb-1">
-                            Correo Electrónico
-                        </label>
-                        <Input
-                            type="email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleInputChange}
-                            required
-                            className="bg-principal-200 border-principal-400/30 text-secondary focus:border-accent/50 transition-colors"
-                        />
-                    </div>
-                    
                     <div>
                         <label className="block text-sm font-medium text-secondary-700 mb-1">
                             Teléfono
